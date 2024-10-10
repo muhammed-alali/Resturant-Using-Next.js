@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**** title  ******/
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/***** **** ****/
+
+/**** home card img animation  ******/
+.imgAnm {
+  animation-duration: 2s;
+  visibility: visible;
+  animation-delay: 1s;
+  animation-name: InUp;
+}
+
+@keyframes InUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/***** **** ****/
+
+/**** detay animation  ******/
+@media only screen and (min-width: 960px) {
+  .section1Animation {
+    animation: section1Animation 1s;
+  }
+
+  @keyframes section1Animation {
+    0% {
+      transform: translateX(-40px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .section2Animation {
+    animation: section2Animation 3s;
+  }
+
+  @keyframes section2Animation {
+    0% {
+      transform: translateX(40px);
+    }
+
+    100% {
+      transform: translateX(0px);
+    }
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .section2Animation {
+    animation: section2Animation 2s;
+  }
+
+  @keyframes section2Animation {
+    0% {
+      transform: translateY(40px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section2Animation {
+    animation: section2Animation 2s;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 25px !important;
+  }
+  @keyframes section2Animation {
+    0% {
+      transform: translateY(40px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+/***** **** ****/
+
+/***** nex & prev swiper *****/
+
+.swiper-button-next:after {
+  color: rgb(223 63 1 / 1);
+}
+.swiper-button-prev:after {
+  color: rgb(223 63 1 / 1);
+}
+/***** **** *****/
