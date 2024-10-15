@@ -36,7 +36,7 @@ const NavList = ({
   onClose?(): void;
 }) => {
   return (
-    <ul className="text-white lg:w-1/2 md:w-[75%] gap-7 w-full mx-auto md:space-y-0 space-y-10 flex items-center justify-between md:flex-row flex-col font-semibold">
+    <ul className="text-white lg:w-1/2 md:w-[75%] xs:!gap-0 md:!gap-7 w-full mx-auto md:space-y-0 space-y-10 flex items-center justify-between md:flex-row flex-col font-semibold">
       {mobileNav ? (
         <button onClick={onClose} className="space-y-1 absolute top-6 left-6 ">
           <IoIosClose className="text-siteColor text-5xl" />

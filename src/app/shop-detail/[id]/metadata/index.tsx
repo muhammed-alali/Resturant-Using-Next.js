@@ -59,7 +59,7 @@ export default function Metadata({ item }: any) {
                           alt={"img"}
                           width={80}
                           height={80}
-                          className="!relative rounded-full"
+                          className="!relative rounded-full "
                         />
                       </div>
                     </>

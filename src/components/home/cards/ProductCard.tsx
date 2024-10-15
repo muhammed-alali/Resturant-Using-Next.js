@@ -107,7 +107,7 @@ const ProductCard = () => {
                                       alt="img"
                                       width={207}
                                       height={207}
-                                      className="    group-hover:scale-[1.1]  duration-[0.4s] ease-in-out imgAnm "
+                                      className="group-hover:scale-[1.1]  duration-[0.4s] ease-in-out imgAnm "
                                     />
                                   </div>
                                 </div>

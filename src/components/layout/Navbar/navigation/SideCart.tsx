@@ -82,7 +82,7 @@ const SideCart: FC<Props> = ({ visible, onRequestClose }) => {
       <div className="w-full h-0.5 bg-gray-200" />
 
       <div className="mt-auto p-4">
-        <div className="py-4 lg:flex items-center">
+        <div className="py-4  items-center">
           <h1 className="font-semibold text-xl uppercase">Total</h1>
           <p className="font-semibold">
             <span className="text-gray-400 font-normal">
