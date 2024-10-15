@@ -34,53 +34,55 @@ const SideCart: FC<Props> = ({ visible, onRequestClose }) => {
       </div>
       <div className="w-full h-0.5 bg-gray-200" />
 
-      {cartItems.map((cartItem: any) => {
-        return (
-          <div key={cartItem.product.id} className="p-4">
-            <div className="flex space-x-4">
-              <Image
-                src={cartItem.product.url}
-                alt=""
-                className="rounded object-cover"
-                width={64}
-                height={64}
-              />
-              <div className="flex-1">
-                <h2 className="font-semibold">{cartItem.product.title}</h2>
-                <div className="flex text-gray-400 text-sm space-x-1">
-                  <span>{cartItem.count}</span>
-                  <span>x</span>
-                  <span>{cartItem.count * cartItem.product.price}</span>
+      <div className="overflow-y-auto xs:h-[288px] lg:h-[380px] xl:h-[388px]">
+        {cartItems.map((cartItem: any) => {
+          return (
+            <div key={cartItem.product.id} className="p-4">
+              <div className="flex space-x-4">
+                <Image
+                  src={cartItem.product.url}
+                  alt=""
+                  className="rounded object-cover"
+                  width={64}
+                  height={64}
+                />
+                <div className="flex-1">
+                  <h2 className="font-semibold">{cartItem.product.title}</h2>
+                  <div className="flex text-gray-400 text-sm space-x-1">
+                    <span>{cartItem.count}</span>
+                    <span>x</span>
+                    <span>{cartItem.count * cartItem.product.price}</span>
+                  </div>
                 </div>
-              </div>
 
-              <div className="ml-auto">
-                <button
-                  onClick={() => removeFromCart(cartItem.product)}
-                  className="text-xs uppercase hover:underline"
-                >
-                  Remove
-                </button>
+                <div className="ml-auto">
+                  <button
+                    onClick={() => removeFromCart(cartItem.product)}
+                    className="text-xs uppercase hover:underline"
+                  >
+                    Remove
+                  </button>
 
-                <div className="flex items-center justify-between">
-                  <button onClick={() => updateCart(cartItem.product, -1)}>
-                    -
-                  </button>
-                  <span className="text-xs">{cartItem.count}</span>
-                  <button onClick={() => updateCart(cartItem.product, 1)}>
-                    +
-                  </button>
+                  <div className="flex items-center justify-between">
+                    <button onClick={() => updateCart(cartItem.product, -1)}>
+                      -
+                    </button>
+                    <span className="text-xs">{cartItem.count}</span>
+                    <button onClick={() => updateCart(cartItem.product, 1)}>
+                      +
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
 
       <div className="w-full h-0.5 bg-gray-200" />
 
       <div className="mt-auto p-4">
-        <div className="py-4">
+        <div className="py-4 lg:flex items-center">
           <h1 className="font-semibold text-xl uppercase">Total</h1>
           <p className="font-semibold">
             <span className="text-gray-400 font-normal">
@@ -92,6 +94,7 @@ const SideCart: FC<Props> = ({ visible, onRequestClose }) => {
 
         <button
           onClick={() => {
+            clearCart();
             // if (isLoggedIn) {
             //   console.log("send data to the server and create payment link");
             //   router.push("/checkout");
@@ -105,6 +108,7 @@ const SideCart: FC<Props> = ({ visible, onRequestClose }) => {
         >
           Checkout
         </button>
+
         <button
           onClick={onRequestClose}
           className="outline-none block mt-4 text-center w-full uppercase"

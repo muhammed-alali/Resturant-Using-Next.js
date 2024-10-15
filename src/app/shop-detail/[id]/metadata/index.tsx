@@ -30,7 +30,7 @@ export default function Metadata({ item }: any) {
                   alt="Selected Image"
                   width={200}
                   height={200}
-                  className="m-auto xs:mb-4 md:mb-7 rounded-full"
+                  className="m-auto xs:mb-4 md:mb-7 rounded-full "
                 ></Image>
               </div>
             </div>
@@ -59,7 +59,7 @@ export default function Metadata({ item }: any) {
                           alt={"img"}
                           width={80}
                           height={80}
-                          className="xs:!w-[70px] xs:!h-[70px]  md:!w-[100px] md:!h-[100px] rounded-full"
+                          className="!relative rounded-full"
                         />
                       </div>
                     </>

@@ -90,7 +90,7 @@ const ProductCard = () => {
                     spaceBetween: 50,
                   },
                 }}
-                className="mySwiper  !overflow-visible !px-12"
+                className="mySwiper  !overflow-visible xs:!px-7 md:!px-12"
               >
                 {cardItems.map((item) => {
                   return (
