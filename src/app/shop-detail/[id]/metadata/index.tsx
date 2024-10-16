@@ -20,7 +20,7 @@ export default function Metadata({ item }: any) {
   return (
     <>
       <section className="bg-siteBg xs:h-[115vh] md:h-screen">
-        <div className="container mx-auto ">
+        <div className="mx-4 md:container md:mx-auto ">
           <div className="h-screen xs:grid-cols-1 grid md:grid-cols-2  pt-24">
             <div className="section1Animation m-auto  ">
               <div>
@@ -57,9 +57,9 @@ export default function Metadata({ item }: any) {
                           key={index}
                           src={img}
                           alt={"img"}
-                          width={80}
-                          height={80}
-                          className="!relative rounded-full "
+                          width={90}
+                          height={90}
+                          className="!relative rounded-full object-none"
                         />
                       </div>
                     </>
