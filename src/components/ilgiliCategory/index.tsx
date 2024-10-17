@@ -11,13 +11,13 @@ import "swiper/css/navigation";
 export default function İlgiliCategory() {
   return (
     <section className="overflow-hidden  ">
-      <h1 className="text-[20px] mx-12  text-siteColor">
+      <h1 className="text-[20px] mx-12 xs:pt-7 md:pt-0  text-siteColor">
         <div className="pb-2">Related Category</div>
         <div className="border border-gray-200"></div>
         {/* <div className=" w-14 h-fit border border-black  rounded-sm block"></div> */}
       </h1>
 
-      <div className=" xs:h-full md:h-full  py-10  ">
+      <div className=" xs:h-full md:h-full xs:pt-0 md:py-10  ">
         <div className="w-full ">
           <div className="cards mt-[140px]  xs:gap-[7rem] md:gap-y-[7rem] md:gap-x-[4rem] ">
             <Swiper
