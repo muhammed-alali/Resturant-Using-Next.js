@@ -2,7 +2,7 @@
 
 import Buying from "@/components/addtocart";
 import Image from "next/image";
-
+import İlgiliCategory from "@/components/ilgiliCategory/index";
 import { useEffect, useRef, useState } from "react";
 
 export default function Metadata({ item }: any) {
@@ -19,7 +19,7 @@ export default function Metadata({ item }: any) {
 
   return (
     <>
-      <section className="bg-siteBg xs:h-[115vh] md:h-screen">
+      <section className="bg-siteBg h-full">
         <div className="mx-4 md:container md:mx-auto ">
           <div className="h-screen xs:grid-cols-1 grid md:grid-cols-2  pt-24">
             <div className="section1Animation m-auto  ">
@@ -66,6 +66,7 @@ export default function Metadata({ item }: any) {
                   );
                 })}
               </div>
+
               {/* <div
                 onClick={addToCart}
                 className="flex gap-2 items-center bg-siteColor text-white w-fit p-2 rounded-md cursor-pointer"
@@ -76,6 +77,9 @@ export default function Metadata({ item }: any) {
               <Buying product={item} />
             </div>
           </div>
+        </div>
+        <div>
+          <İlgiliCategory />
         </div>
       </section>
     </>
