@@ -1,3 +1,4 @@
+import AllProducts from "@/app/allproducts/page";
 import { useCart } from "@/context/CartProvider";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
@@ -94,15 +95,15 @@ const SideCart: FC<Props> = ({ visible, onRequestClose }) => {
 
         <button
           onClick={() => {
-            clearCart();
+            // clearCart();
             // if (isLoggedIn) {
-            //   console.log("send data to the server and create payment link");
-            //   router.push("/checkout");
+
+            router.push("/allproducts");
+
             // } else {
             //   router.push("/auth/sign-in");
             // }
-            // onRequestClose && onRequestClose();
-            alert("Sent Successfully");
+            onRequestClose && onRequestClose();
           }}
           className="border-2 border-orange-600 py-2 w-full rounded text-orange-600 uppercase"
         >
