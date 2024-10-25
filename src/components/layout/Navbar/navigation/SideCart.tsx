@@ -42,7 +42,7 @@ const SideCart: FC<Props> = ({ visible, onRequestClose }) => {
       </div>
       <div className="w-full h-0.5 bg-gray-200" />
 
-      <div className="overflow-y-auto xs:h-[360px] lg:h-[380px] xl:h-[388px]">
+      <div className="overflow-y-auto xs:h-[430px] lg:h-[450px] xl:h-[450px]">
         {cartItems.map((cartItem: any) => {
           return (
             <div key={cartItem.product.id} className="p-4">
@@ -90,7 +90,7 @@ const SideCart: FC<Props> = ({ visible, onRequestClose }) => {
 
       <div className="w-full h-0.5 bg-gray-200" />
 
-      <div className="mt-auto p-4">
+      <div className="pb-4 px-4">
         <div className="py-4  items-center">
           {/* <h1 className="font-semibold text-xl uppercase">Total</h1> */}
           <p className="font-semibold">
