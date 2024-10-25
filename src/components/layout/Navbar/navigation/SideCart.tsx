@@ -42,7 +42,7 @@ const SideCart: FC<Props> = ({ visible, onRequestClose }) => {
       </div>
       <div className="w-full h-0.5 bg-gray-200" />
 
-      <div className="overflow-y-auto xs:h-[430px] lg:h-[450px] xl:h-[450px]">
+      <div className="overflow-y-auto xs:h-[470px] lg:h-[470px] xl:h-[470px]">
         {cartItems.map((cartItem: any) => {
           return (
             <div key={cartItem.product.id} className="p-4">
