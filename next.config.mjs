@@ -11,6 +11,7 @@ const nextConfig = {
       "images.unsplash.com",
       "devsaidul.com",
       "encrypted-tbn3.gstatic.com",
+      "foodking-react.vercel.app",
     ],
     // remotePatterns: [{ hostname: {"images.unsplash.com","devsaidul.com"}, protocol: "https" }],
   },
