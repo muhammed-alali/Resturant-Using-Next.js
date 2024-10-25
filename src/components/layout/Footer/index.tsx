@@ -52,7 +52,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="xs:mb-4 md:mb-0">
+          <div className="">
             <h1 className="mb-4 text-lg font-bold border-b-2 border-siteColor w-fit">
               Get in touch
             </h1>
