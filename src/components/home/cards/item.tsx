@@ -65,7 +65,7 @@ export let cardItems = [
   },
   {
     id: 5,
-    url: "https://foodking-react.vercel.app/assets/img/food/pizza-3.png",
+    url: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTritFU3RQqcbyds1rFJ1wVYnuS07tiHGAhaNpOaPCgqAvBdM4g",
     price: 77,
     title: "Delicious Burger",
     description:
@@ -73,8 +73,8 @@ export let cardItems = [
     category: "The best",
     addCard: "Add To Cart",
     images: [
-      "https://foodking-react.vercel.app/assets/img/food/pizza-3.png",
-      "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkrtwk8SELLoccYwKybiff-rAt1GA6iIUFQfDWn0ZFPNY5joOh",
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTritFU3RQqcbyds1rFJ1wVYnuS07tiHGAhaNpOaPCgqAvBdM4g",
+      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk6ZJfrgfWHTVZvHHJ32CpJ8IohPjdrrcHcCTMZGmYvKIA9w5e",
       "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTritFU3RQqcbyds1rFJ1wVYnuS07tiHGAhaNpOaPCgqAvBdM4g",
       "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQK9Tk1oI3Yrcbc01vtokkj1x2yoR6Xm4NmLURCy4alzLWJIdz8",
     ],

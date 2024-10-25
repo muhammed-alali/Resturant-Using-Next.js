@@ -97,7 +97,7 @@ const ProductCard = () => {
                     <>
                       <SwiperSlide>
                         <Link href={`/shop-detail/${item.id}`} key={item.id}>
-                          <div className="card  bg-cardBg text-center flex items-center justify-center flex-col px-5 pb-[51px] rounded-tl-[4rem] rounded-br-[4rem]">
+                          <div className="card h-[391px] bg-cardBg text-center flex items-center justify-center flex-col px-5 pb-[51px] rounded-tl-[4rem] rounded-br-[4rem]">
                             <div>
                               <div className="m-auto  relative block  ">
                                 <div className="relative mt-[-6rem] mb-[2rem]">
@@ -107,7 +107,7 @@ const ProductCard = () => {
                                       alt="img"
                                       width={207}
                                       height={207}
-                                      className="group-hover:scale-[1.1]  duration-[0.4s] ease-in-out imgAnm "
+                                      className="rounded-full group-hover:scale-[1.1]  duration-[0.4s] ease-in-out imgAnm "
                                     />
                                   </div>
                                 </div>
@@ -117,12 +117,14 @@ const ProductCard = () => {
                               </div>
                             </div>
                             <div className="text-center">
-                              <h1 className="mb-[15px] text-[20px] font-bold text-white">
-                                {item.title}
-                              </h1>
-                              <p className="mb-5 text-[15px] leading-[26px] font-normal text-white line-clamp-3">
-                                {item.description}
-                              </p>
+                              <div>
+                                <h1 className="mb-[15px] text-[20px] font-bold text-white">
+                                  {item.title}
+                                </h1>
+                                <p className="mb-5 text-[15px] leading-[26px] font-normal text-white line-clamp-3">
+                                  {item.description}
+                                </p>
+                              </div>
                               <div className="justify-center flex ">
                                 <Buying product={item} />
                               </div>
@@ -168,7 +170,7 @@ const ProductCard = () => {
                     <>
                       <SwiperSlide>
                         <Link href={`/shop-detail/${item.id}`} key={item.id}>
-                          <div className="card  bg-cardBg text-center flex items-center justify-center flex-col px-5 pb-[51px] rounded-tl-[4rem] rounded-br-[4rem]">
+                          <div className="card h-[391px] bg-cardBg text-center flex items-center justify-center flex-col px-5 pb-[51px] rounded-tl-[4rem] rounded-br-[4rem]">
                             <div>
                               <div className="m-auto  relative block  ">
                                 <div className="relative mt-[-6rem] mb-[2rem]">
@@ -178,7 +180,7 @@ const ProductCard = () => {
                                       alt="img"
                                       width={207}
                                       height={207}
-                                      className="group-hover:scale-[1.1]  duration-[0.4s] ease-in-out imgAnm "
+                                      className="rounded-full group-hover:scale-[1.1]  duration-[0.4s] ease-in-out imgAnm "
                                     />
                                   </div>
                                 </div>
@@ -188,12 +190,14 @@ const ProductCard = () => {
                               </div>
                             </div>
                             <div className="text-center">
-                              <h1 className="mb-[15px] text-[20px] font-bold text-white">
-                                {item.title}
-                              </h1>
-                              <p className="mb-5 text-[15px] leading-[26px] font-normal text-white line-clamp-3">
-                                {item.description}
-                              </p>
+                              <div>
+                                <h1 className="mb-[15px] text-[20px] font-bold text-white">
+                                  {item.title}
+                                </h1>
+                                <p className="mb-5 text-[15px] leading-[26px] font-normal text-white line-clamp-3">
+                                  {item.description}
+                                </p>
+                              </div>
                               <div className="justify-center flex ">
                                 <Buying product={item} />
                               </div>
@@ -208,7 +212,7 @@ const ProductCard = () => {
             </div>
             <div className="cards  mt-[140px] xs:gap-[7rem] md:gap-y-[7rem] md:gap-x-[4rem] ">
               <Swiper
-                slidesPerView={3}
+                slidesPerView={6}
                 navigation={true}
                 loop={true}
                 modules={[Autoplay, Navigation]}
@@ -239,7 +243,7 @@ const ProductCard = () => {
                     <>
                       <SwiperSlide>
                         <Link href={`/shop-detail/${item.id}`} key={item.id}>
-                          <div className="card  bg-cardBg text-center flex items-center justify-center flex-col px-5 pb-[51px] rounded-tl-[4rem] rounded-br-[4rem]">
+                          <div className="card h-[391px] bg-cardBg text-center flex items-center justify-center flex-col px-5 pb-[51px] rounded-tl-[4rem] rounded-br-[4rem]">
                             <div>
                               <div className="m-auto  relative block  ">
                                 <div className="relative mt-[-6rem] mb-[2rem]">
@@ -249,7 +253,7 @@ const ProductCard = () => {
                                       alt="img"
                                       width={207}
                                       height={207}
-                                      className="group-hover:scale-[1.1]  duration-[0.4s] ease-in-out imgAnm "
+                                      className="rounded-full group-hover:scale-[1.1]  duration-[0.4s] ease-in-out imgAnm "
                                     />
                                   </div>
                                 </div>
@@ -259,12 +263,14 @@ const ProductCard = () => {
                               </div>
                             </div>
                             <div className="text-center">
-                              <h1 className="mb-[15px] text-[20px] font-bold text-white">
-                                {item.title}
-                              </h1>
-                              <p className="mb-5 text-[15px] leading-[26px] font-normal text-white line-clamp-3">
-                                {item.description}
-                              </p>
+                              <div>
+                                <h1 className="mb-[15px] text-[20px] font-bold text-white">
+                                  {item.title}
+                                </h1>
+                                <p className="mb-5 text-[15px] leading-[26px] font-normal text-white line-clamp-3">
+                                  {item.description}
+                                </p>
+                              </div>
                               <div className="justify-center flex ">
                                 <Buying product={item} />
                               </div>

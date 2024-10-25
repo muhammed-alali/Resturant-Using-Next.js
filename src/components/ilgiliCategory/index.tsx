@@ -51,7 +51,7 @@ export default function İlgiliCategory() {
                   <>
                     <SwiperSlide>
                       <Link href={`/shop-detail/${item.id}`} key={item.id}>
-                        <div className="card  bg-cardBg text-center flex items-center justify-center flex-col px-5 pb-[51px] rounded-tl-[4rem] rounded-br-[4rem]">
+                        <div className="card h-[391px] bg-cardBg text-center flex items-center justify-center flex-col px-5 pb-[51px] rounded-tl-[4rem] rounded-br-[4rem]">
                           <div>
                             <div className="m-auto  relative block  ">
                               <div className="relative mt-[-6rem] mb-[2rem]">
@@ -61,7 +61,7 @@ export default function İlgiliCategory() {
                                     alt="img"
                                     width={207}
                                     height={207}
-                                    className="group-hover:scale-[1.1]  duration-[0.4s] ease-in-out imgAnm "
+                                    className="rounded-full group-hover:scale-[1.1]  duration-[0.4s] ease-in-out imgAnm "
                                   />
                                 </div>
                               </div>

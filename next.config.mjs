@@ -12,6 +12,8 @@ const nextConfig = {
       "devsaidul.com",
       "encrypted-tbn3.gstatic.com",
       "foodking-react.vercel.app",
+      "cafeu-nextjs.netlify.app",
+      "wptheme.co.in",
     ],
     // remotePatterns: [{ hostname: {"images.unsplash.com","devsaidul.com"}, protocol: "https" }],
   },
