@@ -47,7 +47,7 @@ export default function AllProducts() {
                         <Image
                           src={cartItem.product.url}
                           alt=""
-                          className="rounded object-cover"
+                          className="rounded-full object-cover"
                           width={64}
                           height={64}
                         />
