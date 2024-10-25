@@ -14,8 +14,8 @@ export default function AllProducts() {
   console.log("2222", cartItems);
   return (
     <section className="h-full   ">
-      <div className="md:container md:m-auto pt-24 xs:px-4 md:px-0 ">
-        <div className="my-[60px] md:shadow-[0_6px_30px_rgba(0,0,0,.06)] md:mt-7 md:px-[40px] md:pt-[40px] md:pb-[40px]  rounded-lg ">
+      <div className="md:container md:m-auto xs:pt-12 md:pt-20 xs:px-4 md:px-0 ">
+        <div className=" md:mx-4 xs:mt-[50px] xs:mb-[30px] lg:my-[60px] md:shadow-[0_6px_30px_rgba(0,0,0,.06)] md:mt-7 md:px-[40px] md:pt-[40px] md:pb-[40px]  rounded-lg ">
           <table className="table-fixed w-full">
             <thead className="border-b border-[#d9d9d9] ">
               <tr>
@@ -36,7 +36,7 @@ export default function AllProducts() {
                 </th>
               </tr>
             </thead>
-            <tbody className="overflow-y-auto xs:h-[360px] lg:h-[380px] xl:h-[388px]">
+            <tbody className="overflow-y-auto h-full">
               {cartItems.map((cartItem: any) => {
                 return (
                   <>
@@ -104,7 +104,7 @@ export default function AllProducts() {
               })}
             </tbody>
           </table>
-          <div className="flex justify-end gap-4 mt-[30px]">
+          <div className="flex xs:justify-center md:justify-end gap-4 mt-[30px]">
             <div className="text-siteColor items-center my-auto">
               {" "}
               ${countTotalPrice()}
