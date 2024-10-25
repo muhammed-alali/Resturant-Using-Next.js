@@ -75,7 +75,7 @@ const Navbar: FC<Props> = () => {
   return (
     <>
       <div className="w-full bg-navBg fixed z-10 ">
-        <nav className="flex items-center top-0 left-0 right-0  justify-between max-w-6xl mx-auto xs:pt-4 md:py-4 px-4">
+        <nav className="flex items-center top-0 left-0 right-0  justify-between max-w-6xl mx-auto  py-4 px-4">
           <div>
             <Link href="/">
               <Image
