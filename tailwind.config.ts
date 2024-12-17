@@ -18,6 +18,7 @@ const config: Config = {
         footerBg: "rgb(0 0 0 / 44%)",
       },
       screens: {
+        None: "100%",
         xs: "280px",
         sm: "480px",
         md: "768px",
@@ -25,6 +26,7 @@ const config: Config = {
         xl: "1440px",
       },
     },
+    screens: { None: "100%" },
   },
   plugins: [],
 };

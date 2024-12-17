@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**** banner animation ****/
+
+.moveFromTop {
+  animation-name: moveFromTop;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  display: inline-block;
+}
+
+@keyframes moveFromTop {
+  from {
+    transform: translateY(-30%);
+  }
+}
+
+/**************************/

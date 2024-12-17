@@ -36,7 +36,7 @@ const NavList = ({
   onClose?(): void;
 }) => {
   return (
-    <ul className="text-white lg:w-1/2 md:w-[75%] md:!gap-7 w-full mx-auto md:space-y-0 space-y-7 xs:mb-[19rem] md:mb-0 flex items-center justify-between md:flex-row flex-col font-semibold">
+    <ul className="text-white lg:w-full md:w-[75%] md:!gap-7 w-full mx-auto md:space-y-0 space-y-7 xs:mb-[19rem] md:mb-0 flex items-center justify-between md:flex-row flex-col font-semibold">
       {mobileNav ? (
         <button onClick={onClose} className="space-y-1 absolute top-6 left-6 ">
           <IoIosClose className="text-siteColor text-5xl" />
@@ -47,16 +47,16 @@ const NavList = ({
         <Link href="/">Home</Link>
       </li>
       <li>
-        <Link href="#">Shop</Link>
+        <Link href="/about">About Us</Link>
       </li>
       <li>
-        <Link href="#">Blogs</Link>
+        <Link href="/shop">Shop</Link>
       </li>
       <li>
-        <Link href="#">About</Link>
+        <Link href="/blogs">Blog</Link>
       </li>
       <li>
-        <Link href="#">Contact</Link>
+        <Link href="/contact">Contacts</Link>
       </li>
     </ul>
   );
@@ -74,7 +74,7 @@ const Navbar: FC<Props> = () => {
 
   return (
     <>
-      <div className="w-full bg-navBg fixed z-10 ">
+      <div className="w-full bg-navBg  z-10 ">
         <nav className="flex items-center top-0 left-0 right-0  justify-between max-w-6xl mx-auto  py-4 px-4">
           <div>
             <Link href="/">

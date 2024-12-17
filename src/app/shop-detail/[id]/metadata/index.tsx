@@ -4,6 +4,7 @@ import Buying from "@/components/addtocart";
 import Image from "next/image";
 import İlgiliCategory from "@/components/ilgiliCategory/index";
 import { useEffect, useRef, useState } from "react";
+import Header from "@/components/header";
 
 export default function Metadata({ item }: any) {
   const İmagesRef = useRef<any>();
@@ -19,6 +20,7 @@ export default function Metadata({ item }: any) {
 
   return (
     <>
+      <Header title="Shoping" prodectTitle={item.title} productUrl="/shop" />
       <section className="bg-siteBg h-full">
         <div className="mx-4 md:container md:mx-auto ">
           <div className="h-screen xs:grid-cols-1 grid md:grid-cols-2  pt-24">
