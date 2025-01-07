@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div>
       <div className="bg-siteBg h-full">
-        <div className=" py-[120px] overflow-hidden grid grid-cols-3 mx-[3%] gap-5">
+        <div className="xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-[120px] overflow-hidden grid grid-cols-3 mx-[3%] gap-5">
           <div>
             <div className=" bg-[url('/photo/download.png')] bg-no-repeat bg-cover bg-center py-[42px] px-8 relative  after:absolute contactBg after:top-0 after:left-0 after:w-full after:h-[116px] after:bg-[#0d2221] hover:after:bg-siteColor text-center transition-all ease-linear duration-300 after:transition-all after:ease-linear after:duration-300">
               <div className="relative icon w-[120px] h-[120px] rounded-full border-[2px] border-siteColor  bg-white flex items-center justify-center mx-auto z-10  mb-5">
@@ -94,13 +94,13 @@ export default function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <div className="">
-            <div className="mx-20 ">
-              <div className=" bg-[url('/photo/download.png')] bg-no-repeat bg-cover bg-center py-[82px] px-[105px]">
-                <div className="font-semibold text-[45px] leading-[55px] text-white text-center mb-[60px]">
+            <div className="xs:mx-[3%] md:mx-8 lg:mx-20 ">
+              <div className="xs:px-3 md:px-[75px] lg:px-[105px] bg-[url('/photo/download.png')] bg-no-repeat bg-cover bg-center py-[82px] ">
+                <div className="xs:text-[25px] xs:leading-[40px] font-semibold text-[45px] leading-[55px] text-white text-center mb-[60px]">
                   Have be any question? <div>feel free to Contact</div>
                 </div>
                 <form>
-                  <div className="grid grid-cols-2 gap-5">
+                  <div className="xs:grid-cols-1 grid md:grid-cols-2 gap-5">
                     <div className="relative">
                       {" "}
                       <input

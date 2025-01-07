@@ -34,7 +34,7 @@ const ProductCard = () => {
                 ></Image>
                 The Best Food
               </div>
-              <p className=" text-center xs:text-[35px] md:text-[55px] leading-[69px] font-semibold text-white mb-[166px] ">
+              <p className=" text-center xs:text-[24px] md:text-[55px] leading-[69px] font-semibold text-white mb-[166px] ">
                 At The Best Price
               </p>
             </div>

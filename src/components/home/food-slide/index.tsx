@@ -23,6 +23,14 @@ export default function FoodSlide() {
             autoplay={{
               delay: 10000,
             }}
+            breakpoints={{
+              200: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 4,
+              },
+            }}
             modules={[Autoplay]}
             className=""
           >
@@ -33,7 +41,7 @@ export default function FoodSlide() {
                     <div className="group after:bg-imghover after:absolute after:left-0 after:top-0 after:w-full after:h-0 after:opacity-[1]  duration-[0.5s] hover:after:h-full hover:after:opacity-0 hover:after:duration-700  relative  overflow-hidden">
                       {" "}
                       <Image
-                        className=" group-hover:scale-[1.1]  duration-[0.5s] ease-in-out "
+                        className="xs:w-[400px] xs:h-[200px] group-hover:scale-[1.1]  duration-[0.5s] ease-in-out "
                         src={item.imgUrl}
                         alt="img"
                         width={600}

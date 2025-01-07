@@ -30,16 +30,16 @@ export default function Chefs() {
             ></Image>
             Meet Our Exclusive
           </div>
-          <p className=" text-center xs:text-[35px] md:text-[55px] leading-[69px] font-semibold text-white mb-[30px] ">
+          <p className=" text-center xs:text-[24px] md:text-[55px] leading-[69px] font-semibold text-white mb-[30px] ">
             Exclusive & Master Chefs
           </p>
         </div>
-        <div className="mx-[3%] grid grid-cols-4 gap-6 py-28 ">
+        <div className="xs:pt-4 xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  mx-[3%] grid  gap-6 py-28 ">
           {ChefsData.map((item: any, index: number) => {
             return (
               <>
                 <div className="relative">
-                  <div className=" max-h-[290px] md:max-h-[354px] w-full h-full mb-[25px] relative overflow-hidden">
+                  <div className=" xs:max-h-[320px] max-h-[290px] md:max-h-[354px] w-full h-full mb-[25px] relative overflow-hidden">
                     <Image
                       src={item.imgUrl}
                       alt=""

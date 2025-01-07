@@ -16,7 +16,7 @@ export default function Header({
     <div>
       <div className="bg-[url('/photo/header-bg.png')] bg-no-repeat bg-cover relative py-[70px] md:py-[171px]">
         <div className="bg-[rgb(0_0_0_/0.5)] absolute z-20 w-full h-full top-0"></div>
-        <div className="flex gap-3 items-center container mx-[140px] absolute text-white z-[30] font-bold text-lg md:text-[25px] lg:text-[32px] leading-[60px] ">
+        <div className="xs:ml-[25px] xs:gap-1 xs:text-[16px] xs:leading-[20px] md:px-[30px] lg:px-[140px] flex gap-3 items-center  absolute text-white z-[30] font-bold text-lg md:text-[25px] lg:text-[32px] leading-[60px] ">
           <Link href={"/"} className="hover:text-siteColor duration-300">
             Home
           </Link>

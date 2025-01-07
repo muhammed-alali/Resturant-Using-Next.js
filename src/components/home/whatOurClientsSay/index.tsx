@@ -13,7 +13,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 export default function WhatOurClientsSay() {
   return (
     <>
-      <section className="bg-siteBg py-20 ">
+      <section className="bg-siteBg py-20 xs:pt-[2rem] ">
         <div className=" bg-[url('/photo/download2.png')] bg-no-repeat bg-cover">
           <div>
             <div className=" satisfy-regular  text-siteColor flex gap-[15px] items-center text-center my-auto  text-[24px] mb-[19px] justify-center">
@@ -26,7 +26,7 @@ export default function WhatOurClientsSay() {
               ></Image>
               BEST FOOD MENU
             </div>
-            <p className=" text-center xs:text-[35px] md:text-[55px] leading-[69px] font-semibold text-white mb-[166px] ">
+            <p className="xs:text-[24px] xs:mb-[44px] text-center  md:text-[55px] leading-[69px] font-semibold text-white mb-[166px] ">
               Choose Your Best Menus
             </p>
           </div>
@@ -35,11 +35,21 @@ export default function WhatOurClientsSay() {
             <div className="">
               <Swiper
                 loop={true}
-                spaceBetween={30}
                 centeredSlides={true}
                 slidesPerView={2}
                 autoplay={{
-                  delay: 10000,
+                  delay: 40000,
+                }}
+                breakpoints={{
+                  200: {
+                    slidesPerView: 1,
+                  },
+                  760: {
+                    slidesPerView: 1,
+                  },
+                  1024: {
+                    slidesPerView: 2,
+                  },
                 }}
                 modules={[Autoplay]}
                 className="mySwiper"
@@ -48,9 +58,9 @@ export default function WhatOurClientsSay() {
                   return (
                     <>
                       <SwiperSlide>
-                        <div className="grid grid-cols-12 gap-4 bg-[rgb(15_39_39/1)] h-[281px] py-5 xl:py-10 px-5 xl:px-11  gap-y-4 lg:gap-x-4 xl:gap-x-[49px] ">
-                          <div className="col-span-12 md:col-span-3">
-                            <div className="w-[60px] lg:w-[100px] xl:w-[100px] h-[60px] lg:h-[100px] xl:h-[100px]  ">
+                        <div className="mx-[3%] xs:h-[384px] grid grid-cols-12 gap-4 bg-[rgb(15_39_39/1)] h-[281px] py-5 xl:py-10 px-5 xl:px-11  gap-y-4 lg:gap-x-4 xl:gap-x-[49px] ">
+                          <div className="xs:col-span-12 md:col-span-3 lg:col-span-4 xl:col-span-3">
+                            <div className="xs:mx-auto  w-[60px] lg:w-[100px] xl:w-[100px] h-[60px] lg:h-[100px] xl:h-[100px]  ">
                               <Image
                                 className="!relative rounded-full object-cover"
                                 src={item.imgUrl}
@@ -58,10 +68,10 @@ export default function WhatOurClientsSay() {
                                 fill
                               ></Image>
                             </div>
-                            <h1 className="text-white font-semibold leading-[25px] my-6 ">
+                            <h1 className="xs:text-center text-white font-semibold leading-[25px] my-6 ">
                               {item.title}
                             </h1>
-                            <div className="flex gap-1">
+                            <div className="flex gap-1 xs:justify-center">
                               <span className="bg-yellow-400  p-[2px]">
                                 <TiStarFullOutline className="text-white " />
                               </span>
@@ -79,8 +89,10 @@ export default function WhatOurClientsSay() {
                               </span>
                             </div>
                           </div>
-                          <span className=" block w-full md:w-[.5px] border border-dashed border-siteColor h-[.5px] md:h-full"></span>
-                          <div className="col-span-12 md:col-span-7 my-auto">
+                          <div className="dashed col-span-12 md:col-span-1">
+                            <span className=" block w-full md:w-[.5px] border border-dashed border-siteColor h-[.5px] md:h-full"></span>
+                          </div>
+                          <div className="xs:col-span-12 md:col-span-7 my-auto">
                             <span>
                               <svg
                                 width="34"
@@ -99,7 +111,7 @@ export default function WhatOurClientsSay() {
                                 ></path>
                               </svg>
                             </span>
-                            <p className="font-medium text-[12px] md:text-[14px] xl:text-[16px] leading-5 md:leading-[30px] py-2 lg:py-[15px] xl:py-[22px] text-white">
+                            <p className="xs:text-sm font-medium text-[12px] md:text-[14px] xl:text-[16px] leading-5 md:leading-[30px] py-2 lg:py-[15px] xl:py-[22px] text-white">
                               {item.desc}
                             </p>
                             <span className="flex justify-end">

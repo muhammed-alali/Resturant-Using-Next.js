@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 export default function CountUpCom() {
   return (
-    <section className="bg-[#102b2a]  py-20">
+    <section className="bg-[#102b2a] xs:pt-0 py-20">
       <div className=" flex mx-[3%] items-center justify-between flex-col md:flex-row">
         <CountUp start={0} end={25} delay={0}>
           {({ countUpRef }) => (

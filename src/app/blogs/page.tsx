@@ -27,12 +27,12 @@ export default function Blogs() {
                 Get Every Single Updates
               </p>
             </div>
-            <div className="grid grid-cols-3 mx-[3%] gap-10 pb-20 ">
+            <div className="xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid grid-cols-3 mx-[3%] gap-10 pb-20 ">
               {data.map((item) => {
                 return (
                   <>
                     <div className=" bg-[rgb(15_39_39/1)] rounded-bl-[16px] rounded-br-[16px]">
-                      <div className="group after:bg-imghover after:absolute after:left-0 after:top-0 after:w-full after:h-0 after:opacity-[1]  duration-[0.5s] hover:after:h-full hover:after:opacity-0 hover:after:duration-700 w-[396px] h-[280px] relative mb-[18px] md:mb-[35px]  overflow-hidden">
+                      <div className="xs:w-full md:w-auto xs:h-[250px] group after:bg-imghover after:absolute after:left-0 after:top-0 after:w-full after:h-0 after:opacity-[1]  duration-[0.5s] hover:after:h-full hover:after:opacity-0 hover:after:duration-700 w-[396px] h-[280px] relative mb-[18px] md:mb-[35px]  overflow-hidden">
                         <Image
                           src={item.imgUrl}
                           alt="img"

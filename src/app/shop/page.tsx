@@ -8,13 +8,13 @@ import Header from "@/components/header";
 const Shopcards = () => {
   return (
     <>
-      <Header title="Shoping"/>
+      <Header title="Shoping" />
       <section className="overflow-hidden bg-siteBg  md:h-full ">
         <div className=" xs:h-full md:h-full bg-no-repeat bg-[url('/photo/download1.png')] bg-center py-[70px] md:bg-[length:102%_94%] lg:bg-[length:97%_109%]">
           <div className="">
             <div className="w-full ">
               <div className="cards mt-[140px]  xs:gap-[7rem] md:gap-y-[7rem] md:gap-x-[4rem] ">
-                <div className="grid grid-cols-3 gap-12 !overflow-visible xs:!px-7 md:!px-12">
+                <div className="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3    gap-12 !overflow-visible xs:!px-7 md:!px-12">
                   {cardItems.map((item) => {
                     return (
                       <>

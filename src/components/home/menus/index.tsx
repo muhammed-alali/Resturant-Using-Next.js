@@ -17,14 +17,14 @@ export default function Menus() {
             ></Image>
             BEST FOOD MENU
           </div>
-          <p className=" text-center xs:text-[35px] md:text-[55px] leading-[69px] font-semibold text-white mb-[166px] ">
+          <p className="xs:mb-[44px] xs:text-[24px] text-center  md:text-[55px] leading-[69px] font-semibold text-white mb-[166px] ">
             Choose Your Best Menus
           </p>
         </div>
-        <div className="grid grid-cols-12 gap-x-4 lg:gap-x-[60px] xl:gap-x-[60px] mx-[3%]">
-          <div className="col-span-3 ">
+        <div className="grid grid-cols-12 gap-x-4 lg:gap-x-[30px] xl:gap-x-[60px] mx-[3%]">
+          <div className="md:mb-6 lg:mb-0 xs:col-span-12 md:col-span-12 lg:col-span-3 ">
             {/* overlay-anim  fadeInUpİmg */}
-            <div className="mb-[30px]  lg:max-h-[420px] xl:max-h-[500px] overflow-hidden group after:bg-imghover after:absolute after:left-0 after:top-0 after:w-full after:h-0 after:opacity-[1] hover:after:h-full hover:after:opacity-0 hover:after:duration-700 w-full h-full relative">
+            <div className="xs:h-[350px]  mb-[30px] md:h-[600px] md:mx-auto md:w-[450px] lg:w-full lg:mx-0 lg:max-h-[420px] xl:max-h-[500px] overflow-hidden group after:bg-imghover after:absolute after:left-0 after:top-0 after:w-full after:h-0 after:opacity-[1] hover:after:h-full hover:after:opacity-0 hover:after:duration-700 w-full h-full relative">
               <Image
                 src={"/photo/best-food-menu-1.png"}
                 alt={"img"}
@@ -32,11 +32,11 @@ export default function Menus() {
                 className="w-full h-full group-hover:scale-[1.1]  duration-[0.4s] ease-in-out imgAnm"
               ></Image>
             </div>
-            <span className=" font-medium lg:text-[24px] xl:text-[24px] leading-[30px] text-siteColor text-center underline block">
+            <span className="xs:mb-[30px] font-medium lg:text-[24px] xl:text-[24px] leading-[30px] text-siteColor text-center underline block">
               VIEW ALL MENU
             </span>
           </div>
-          <div className="col-span-6">
+          <div className=" xs:col-span-12 md:col-span-12 lg:col-span-6">
             {Menusİtem.map((item) => {
               return (
                 <>
@@ -50,7 +50,7 @@ export default function Menus() {
 
                     <div className="  font-semibold lg:text-[24px] xl:text-[24px] leading-[30px] text-siteColor text-right  flex  ">
                       {/* <div className=""></div> */}
-                      <div className=" relative w-full before:border before:border-siteColor before:border-dashed before:absolute before:top-[50%] before:left-0 before:w-full "></div>
+                      <div className=" relative w-full before:border before:border-siteColor before:border-dashed before:w-full before:absolute before:top-[50%] before:left-0  "></div>
                       <span className="pl-2 "> ${item.price}</span>
                     </div>
                   </div>
@@ -58,11 +58,11 @@ export default function Menus() {
               );
             })}
           </div>
-          <div className="col-span-3">
-            <span className=" font-normal lg:text-[24px] xl:text-[24px] leading-[30px] text-transparent  menusTitle ">
+          <div className=" xs:col-span-12 md:col-span-12 lg:col-span-3">
+            <span className="md:flex md:justify-center font-normal lg:text-[24px] xl:text-[24px] leading-[30px] text-transparent  menusTitle ">
               Available: 07.00pm to 11.00pm
             </span>
-            <div className="mt-[30px] lg:max-h-[420px] xl:max-h-[500px] overflow-hidden group after:bg-imghover after:absolute after:left-0 after:top-0 after:w-full after:h-0 after:opacity-[1] hover:after:h-full hover:after:opacity-0 hover:after:duration-700 w-full h-full relative">
+            <div className="xs:h-[350px] md:h-[600px] md:mx-auto md:w-[450px] lg:w-full lg:mx-0 mt-[30px] lg:max-h-[420px] xl:max-h-[500px] overflow-hidden group after:bg-imghover after:absolute after:left-0 after:top-0 after:w-full after:h-0 after:opacity-[1] hover:after:h-full hover:after:opacity-0 hover:after:duration-700 w-full h-full relative">
               <Image
                 src={"/photo/best-food-menu-2.png"}
                 alt="img"
